@@ -5,7 +5,7 @@ import Layout from "../Layout";
 import FormPage from "../Pages/FormPage";
 import TablePage from "../Pages/TablePage";
 
-export default [
+const routes =  [
 	{
 		path: "/",
 		component: Layout,
@@ -35,3 +35,5 @@ export default [
 		],
 	},
 ];
+
+export default routes
