@@ -1,19 +1,4 @@
-import React from 'react'
-import PropsType from 'prop-types'
+import Table from './Table'
+import Column from './Column'
 
-function Table(props) {
-    return (
-        <div>Table</div>
-    )
-}
-
-Table.defaultProps = {
-
-}
-
-Table.propsType = {
-
-}
-
-
-export default React.memo(Table)
+export { Table, Column }

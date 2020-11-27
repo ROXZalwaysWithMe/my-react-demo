@@ -1,6 +1,6 @@
 import React, {memo} from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
-import PropsType from 'prop-types'
+import PropTypes from 'prop-types'
 
 import { Component, Item } from './style'
 
@@ -22,7 +22,7 @@ function Nav(props) {
     return (
         <Component>
             {datas.map(item => (
-                <NavItem isActive={location.pathname === item.path} name={item.name} path={item.path} />
+                <NavItem key={item.name} isActive={location.pathname === item.path} name={item.name} path={item.path} />
             ))}
         </Component>
     )
@@ -32,8 +32,8 @@ Nav.defaultProps = {
     datas: []
 }
 
-Nav.propsType = {
-    datas: PropsType.array
+Nav.propTypes = {
+    datas: PropTypes.array
 }
 
 
